@@ -1,0 +1,19 @@
+<div class="nav">
+
+        <div class="logo">
+            <img src="../../../assets/imgs/258102.svg" alt="">
+        </div>
+        <div class="links">
+            <span (click)="navigateToSection('home')" >Accueil</span>
+            <span  mat-button [matMenuTriggerFor]="menu">A propos <ion-icon  name="chevron-up-outline"></ion-icon></span>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="navigateToSection('formation')" >Formation</button>
+                <button mat-menu-item (click)="navigateToSection('experience')" >Expérience Proffesionnel</button>
+                <button mat-menu-item (click)="navigateToSection('competences')" >Compétences</button>
+
+              </mat-menu>
+            <span (click)="navigateToSection('projects')">Projets</span>
+            <span (click)="navigateToSection('contact')">Contact</span>
+
+        </div>
+    </div>
