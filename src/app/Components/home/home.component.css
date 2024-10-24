@@ -14,7 +14,7 @@
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-    background-color: rgb(232, 236, 240);
+    background-color: rgb(72, 153, 92);
     position: relative;
     overflow: hidden;
 }
@@ -54,7 +54,7 @@
     position: absolute;
     height: 110%;
     width: 30px;
-    background-color: aliceblue;
+    background-color: rgb(242, 255, 240);
     transform: rotate(10deg);
 }
 
@@ -62,16 +62,18 @@
     position: absolute;
     height: 110%;
     width: 30px;
-    background-color: rgb(75, 127, 180);
+    background-color: white;
     transform: rotate(10deg);
     left: 880px;
 }
+
 
 
 .text p {
     font-size: 38px;
     padding: 30px 50px;
     border-radius: 8px;
+    color: white;
 }
 
 
@@ -116,7 +118,7 @@
 
 .content {
     font-size: 18px !important;
-    color:gray;
+    color:white;
     line-height: 23px;
     font-weight: normal;
     font-style: italic;

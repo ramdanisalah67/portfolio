@@ -12,6 +12,9 @@ import {MatButtonModule} from '@angular/material/button';
 import { AboutComponent } from './Components/about/about.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { ContactComponent } from './Components/contact/contact.component';
+import { PersonnalInfosComponent } from './Components/personnal-infos/personnal-infos.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +22,7 @@ import { ContactComponent } from './Components/contact/contact.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
+    PersonnalInfosComponent
     
   ],
   imports: [
@@ -28,7 +32,8 @@ import { ContactComponent } from './Components/contact/contact.component';
     BrowserAnimationsModule,
     MatMenuModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
