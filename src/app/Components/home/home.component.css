@@ -1,103 +1,80 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
+    font-size: 20px;
+}
+
+*:not(i) {
+    font-family: "Barlow", sans-serif;
 }
 
 
-
-
-
-
-.context  {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.context {
+    width: 100%;
     height: 100vh;
-    background-color: rgb(72, 153, 92);
-    position: relative;
-    overflow: hidden;
-}
-
-
-.context .text {
-    height: 82%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 44%;
-    margin-top: 36px;
-}
-.context .text img {
-
-    width: 250px;
-    height: 300px;
-    border-radius: 10px
-}
-
-.context .image {
-    height: 100%;
-    width: 44%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../../../assets/imgs/bg_home.jpg');
+    background-size: cover;
 }
 
-.text span {
-    width: 80%;
-    font-size: 24px;
+.context::before {
+    content: '';
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.164);
+    right: 0px;
+    transform: rotate(30deg);
+}
+
+.context .content {
+    height: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  
+}
+
+.context .content .title {
+    font-size: 80px;
     font-weight: bold;
-
-}
-.line1 {
-    position: absolute;
-    height: 110%;
-    width: 30px;
-    background-color: rgb(242, 255, 240);
-    transform: rotate(10deg);
+    margin: 25px 0px;
+  
 }
 
-.line2 {
-    position: absolute;
-    height: 110%;
-    width: 30px;
-    background-color: white;
-    transform: rotate(10deg);
-    left: 880px;
+.context .content  p {
+    width: 70%;
+    line-height: 30px;
+    margin-left: 25px;
+    margin-top: 80px;
+    text-align: left;
+    
 }
 
-
-
-.text p {
-    font-size: 38px;
-    padding: 30px 50px;
-    border-radius: 8px;
-    color: white;
+.context .content span {
+    display: block;
+    margin-top: 100px;
+    width: 75%;
+    font-size: 20px;
+    font-weight: bold;
+    
 }
 
-
-.text button {
-    width: 300px;
-    height: 70px;
-    font-size: 25px;
-    background-color: rgb(49, 52, 54);
-    color: white;
-}
-
-
-.socials {
-    width: 80%;
+.context .content .icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 65%;
+    margin-top: 50px;
 }
-
-
-
-
-
-.socials i {
+.context .content .icons i {
     font-size: 30px;
 }
 
@@ -105,24 +82,112 @@
 
 
 
-.bg2 {
-    position: absolute;
-    top: -90px;
-    right: -80px;
-    width: 55%;
-    height: 130%;
-    z-index: -1;
-    transform: rotate(10deg);
+.context .content button {
+    margin-top: 45px;
+    padding: 15px 0px;
+    width: 200px;
+    
+}
+.context .profile {
+    z-index: 1;
+    height: 68%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
 
-.content {
-    font-size: 18px !important;
-    color:white;
-    line-height: 23px;
-    font-weight: normal;
-    font-style: italic;
 
+
+
+
+.context .profile .image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 15px 0px;
+    background-image: url('../../../assets/imgs/DSC06742.JPG');
+    background-size: cover;
 }
 
 
+.context .profile span {
+    display: block;
+    margin: 15px 0px;
+    font-size: 30px;
+    font-synthesis: bold;
+}
+
+.context .profile .description {
+    margin: 25px 0px;
+ 
+} 
+
+.context .profile button {
+    margin-top: 45px;
+    padding: 15px 0px;
+    width: 200px;
+    font-size: 16px;
+}
+
+
+
+/*Media Query */
+
+@media only screen and (max-width: 600px) {
+
+    .context  {
+        display: flex;
+        flex-direction: column;
+        height: auto
+    }
+
+    .context .content {
+
+        width: 100%;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid gray ;
+    }
+
+    .context .content .title {
+
+        font-size: 40px;
+        line-height: 55px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .context .profile {
+
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .context .profile .image {
+        width: 250px;
+        height: 250px;
+    }
+    .context .profile span {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .context .profile .description {
+        padding: 15px;
+        text-align: left;
+        font-size: 14px;
+        margin: 0px;
+    }
+
+
+    .context .profile button {
+        margin: 5px;
+        
+    }
+
+
+    }

@@ -1,31 +1,30 @@
 
-<div class="context" id="home">
- 
-
-
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-    <div class="line4"></div>
-    <div class="bg2"></div>
-    <div class="text">
-       <p>Bienvenue sur mon Portfolio</p>
-       <img src="../../../assets/imgs/DSC06742.JPG" alt="">
-       <span class="content">
-        Je m'appelle Salah-Eddine Ramdani, ingénieur en informatique et développeur full stack spécialisé en Java et Angular. Passionné par les nouvelles technologies, je conçois des solutions innovantes et performantes pour répondre aux besoins des entreprises. Explorez mon portfolio pour découvrir mes projets, mes compétences, et mes contributions.
-       </span>
-       <button> Read More ...</button>
-       <span>Contact Us :</span>
-       <div class="socials">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-github"></i>
+<div class="context">
+   <div class="content" #title>
+       <div class="title" >Welcome to my Portfolio</div>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, eligendi, repellat debitis ea quo enim voluptates corporis amet vitae cumque doloribus recusandae voluptatum! Magni, numquam a? Fuga voluptates cupiditate id!
+       </p>
+       <button mat-flat-button style="font-size: 16px;background: rgb(53, 53, 192);color: white" >Découvrire plus</button>
+       <span>contact me : </span>
+       <div class="icons">
+       <i class="fa-solid fa-envelope"></i>
+       <i class="fa-solid fa-phone"></i>
+       <i class="fa-brands fa-linkedin"></i>
+       <i class="fa-brands fa-github"></i>
+       </div>
+   </div>
+   <div class="profile" #myElement>
+       <p class="image"></p>
+       <span>Ramdani salah-eddine</span>
+       <div class="description">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vitae aliquid perspiciatis blanditiis, rerum quas, harum praesentium fugiat nulla necessitatibus alias optio repellat inventore sit sequi. Harum similique minus fugit?
 
        </div>
-    </div>
-    <div class="image">
-       <img src="../../../assets/imgs/rb_61529.png" alt=""> 
-    </div>
-
+       <button mat-flat-button style="font-size: 16px;background: rgb(53, 53, 192);color: white;">Découvrire plus</button>
+   </div>
 </div>
+<app-formation></app-formation>
+<app-experience></app-experience>
+<app-competences></app-competences>
+<app-cerifs></app-cerifs>
+<app-contact></app-contact>

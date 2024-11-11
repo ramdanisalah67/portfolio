@@ -15,6 +15,11 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { PersonnalInfosComponent } from './Components/personnal-infos/personnal-infos.component';
 import {MatDialogModule} from '@angular/material/dialog';
 
+import { FormationComponent } from './Components/formation/formation.component';
+import { CerifsComponent } from './Components/cerifs/cerifs.component';
+import { CompetencesComponent } from './Components/competences/competences.component';
+import { ExperienceComponent } from './Components/experience/experience.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +27,12 @@ import {MatDialogModule} from '@angular/material/dialog';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    PersonnalInfosComponent
+    PersonnalInfosComponent,
+    FormationComponent,
+    CerifsComponent,
+    CompetencesComponent,
+    ExperienceComponent,
+    
     
   ],
   imports: [
@@ -33,7 +43,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatMenuModule,
     MatButtonModule,
     MatExpansionModule,
-    MatDialogModule
+    MatDialogModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
