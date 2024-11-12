@@ -6,14 +6,14 @@
 
 
 .nav {
-    position: absolute;
+    position: fixed;
+    z-index: 10;
+    left: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0px;
-    width: 100%;
-    background-color: white;
-    z-index: 50;
+    width: 99%;
+    background: rgba(182, 184, 190, 0.425);
 }
 
 .logo {
@@ -31,12 +31,15 @@
     flex-grow: 0.3;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
+
+
 .nav .links span {
-    border-bottom: 2px solid ;
     padding: 8px 0px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 
@@ -62,4 +65,44 @@
 .links button:hover {
 
     background-color: rgba(0, 0, 0, 0.26);
+}
+
+
+
+.line {
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    width: 140px;
+    height: 10px;
+    background: #6b6396;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+
+
+
+.toAccueil {
+    position: absolute;
+    left: 0px;
+    transition: .3s;
+}
+
+.toPropos {
+    position: absolute;
+    left: 160px;
+    transition: .3s;
+}
+
+.toProject {
+    position: absolute;
+    left: 295px;
+    transition: .3s;
+}
+
+.toContact {
+    position: absolute;
+    left: 430px;
+    transition: .3s;
 }

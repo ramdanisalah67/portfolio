@@ -1,10 +1,11 @@
 <div class="nav">
 
         <div class="logo">
-            <img src="../../../assets/imgs/258102.svg" alt="">
+            <img src="../../../assets/imgs/palestine.jpg" alt="">
         </div>
         <div class="links">
-            <span (click)="navigateToSection('home')" >Accueil</span>
+            <div class="line {{leftValue}}"></div>
+            <span (click)="navigateToSection('Accueil')" >Accueil</span>
             <span  mat-button [matMenuTriggerFor]="menu">A propos <ion-icon  name="chevron-up-outline"></ion-icon></span>
             <mat-menu #menu="matMenu">
                 <button mat-menu-item (click)="navigateToSection('formation')" >Formation</button>
@@ -15,6 +16,7 @@
             <span (click)="navigateToSection('projects')">Projets</span>
             <span (click)="navigateToSection('contact')">Contact</span>
             <button (click)="openDialog()">Informations Personnel</button>
+            <button (click)="logout()">logout</button>
 
         </div>
     </div>

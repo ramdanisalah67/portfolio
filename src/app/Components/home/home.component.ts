@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,19 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  animate =""
-
-
-
-
-  toDown(){
-    this.animate= "toDown"
-  }
-
-  
-  toUp(){
-    this.animate= ""
-  }
-
-
+ 
 }
